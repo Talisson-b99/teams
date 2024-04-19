@@ -11,6 +11,7 @@ import Loading from "@/components/loading";
 
 import theme from "@/theme";
 import NewGroup from "@/screens/new-group";
+import Players from "@/screens/players";
 
 export default function App() {
   const [load, error] = useFonts({
@@ -26,7 +27,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {load ? <NewGroup /> : <Loading />}
+      {load ? <Players /> : <Loading />}
     </ThemeProvider>
   );
 }

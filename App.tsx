@@ -10,6 +10,7 @@ import { Groups } from "@/screens/groups";
 import Loading from "@/components/loading";
 
 import theme from "@/theme";
+import NewGroup from "@/screens/new-group";
 
 export default function App() {
   const [load, error] = useFonts({
@@ -25,7 +26,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {load ? <Groups /> : <Loading />}
+      {load ? <NewGroup /> : <Loading />}
     </ThemeProvider>
   );
 }
